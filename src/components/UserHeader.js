@@ -9,7 +9,14 @@ class UserHeader extends React.Component {
       return null;
     }
 
-    return <div className="header">{user.name}</div>;
+    return (
+      <div
+        className="header"
+        style={{ marginTop: ".5rem", marginBottom: ".5rem" }}
+      >
+        {user.name}
+      </div>
+    );
   }
 }
 

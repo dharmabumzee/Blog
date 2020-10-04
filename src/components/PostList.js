@@ -26,7 +26,16 @@ class PostList extends React.Component {
   }
 
   render() {
-    return <div className="ui relaxed divided list">{this.renderList()}</div>;
+    return (
+      <div className="ui container">
+        <div
+          className="ui relaxed divided list"
+          style={{ marginBottom: "1rem" }}
+        >
+          {this.renderList()}
+        </div>
+      </div>
+    );
   }
 }
 
